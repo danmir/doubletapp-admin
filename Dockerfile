@@ -6,5 +6,6 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app/
 RUN npm install
 
-EXPOSE 3000
+ENV PORT 4005
+EXPOSE 4005
 CMD [ "npm", "start" ]
